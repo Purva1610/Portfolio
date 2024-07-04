@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+			margin:0; padding:0;
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, Tahoma,sans-serif;
+			outline: none;
+			border: none;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: .2s linear;
+		}
+		html{
+			font-size: 80%;
+			scroll-behavior: smooth;
+			scroll-padding: 6rem;
+			overflow-x: hidden;
+			background-color: rgb(19, 18, 18);
+		}
+        header{
+			position: fixed;
+			top: 0;left:0;right:0;
+			background :black;
+			padding: 2rem 10%;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			z-index:1000;
+			box-shadow:0 .5rem 1rem rgba(31, 30, 30, 0.1);
+            }
+        .logo{
+			font-size:3rem;
+			color:#fff;
+			font-weight:800;
+			cursor: pointer;
+			transition:0.3s ease;
+		}
+		.logo:hover{
+			transform: scale(1.1);
+			color: aqua;
+		}
+		.logo span{
+			text-shadow: 0 0 25px aqua;
+		}
+
+		.navbar{
+			display:flex;
+		}
+		.navbar a{
+			font-size:1.2rem;
+			padding:0 1.5rem;
+			color:#fff;
+			font-weight: 500;
+			transition: 0.3s ease;
+			border-bottom: 3px solid transparent ;
+		}
+		.navbar a:hover,
+		.navbar a.active{
+			color:aqua;
+			border-bottom: 2px solid aqua;
+
+        }
+.project{
+  color: black;
+}
+.project h2{
+  margin-top: 11rem;
+  margin-bottom: 6rem;
+  margin-left: 36rem;
+  color:#fff;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+.project-box{
+  background-color: aqua;
+  height: 250px;
+  width:600px;
+  margin-left: 2.7rem;
+  border-radius: 3rem;
+  border: 5px solid transparent;
+  cursor: pointer;
+  transition: 0.4 ease-in-out;
+}
+.project-box:hover{
+  background: transparent;
+  color:white;
+  border:3px solid aqua;
+  transform: scale(1.03);
+}
+.project-box .project-info{
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  max-height: 170px;
+  justify-content: left;
+  align-items: baseline;
+  padding: 3rem 3rem;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .project {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    padding: 10px;
+  }
+}
+        </style>
+<body>
+    <header>
+        <a href="#" class="logo">Web Developer<span></span></a>
+        <nav class="navbar">
+        <a href="C:/Users/SS/Desktop/portfolio/portfolio.html">Home</a>
+        <a href="C:/Users/SS/Desktop/portfolio/education.html">Education</a>
+        <a href="C:/Users/SS/Desktop/portfolio/skills.html">Skills</a>
+        <a href="C:/Users/SS/Desktop/portfolio/exp.html">Exprience</a>
+    </nav>
+    </header>
+    <section class="project" id="project">
+    <h2 class="heading"> My Recent Projects</h2>
+    <div class="project-container">
+    <div class="project-box">
+      <div class="project-info">
+    <h3>Chatter (Chat Application) using React.js, Node.js and Firebase</h3><br>
+    <p>Developed a chat application that rapidly ship in app messaging with our <br>
+    highly reliable chat infrastructure and feature-rich SDKs to improve your<br>
+     overall in-app conversion,engagementand retention. </p>
+    </div>
+  </div>
+  <div class="project-box">
+    <div class="project-info">
+    <h3>Ghar ki Rasoi (Cloud Kitchen) using Mern Technology</h3><br>
+   <p>I co-developed Ghar Ki Rasoi. I collaborate with 3 partners to create a fully functional application.
+Key features include real time food delivery tracking, a chef module,an admin setion for comprehensive management,
+direct order acceptace by chefs, delivery assignment add an integrated payment gateways.</p>
+<br>
+My Contribution: Working on landing page and Add to Card Functionalities and Backend</p>
+</div>
+</div>
+<div class="project-box">
+  <div class="project-info">
+<h3>Ecommerce App Using React Native and Node.js</h3>
+<br>
+<p>An eCommerce app built with React Native & Node.js enables seamless cross-platform 
+    shopping experiences,providing users with a robust interface for browsing products & making purchases, while the backend efficiently manages data & user interactions.<br>
+    <br>My Contribution: Design all frontend Template.</p>
+    </div>
+    </div>
+  <div class="project-box">
+  <div class="project-info">
+<h3>Amazon Home Page Clone Using HTML and CSS</h3><br>
+<p>Develope a clone of Amazon Home Page, replicating its design and layout<br> 
+for practice and demonstration of frontend development skills</p>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
