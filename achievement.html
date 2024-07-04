@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+			margin:0; padding:0;
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, Tahoma,sans-serif;
+			outline: none;
+			border: none;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: .2s linear;
+		}
+		html{
+			font-size: 80%;
+			scroll-behavior: smooth;
+			scroll-padding: 6rem;
+			overflow-x: hidden;
+			background-color: rgb(19, 18, 18);
+		}
+        header{
+			position: fixed;
+			top: 0;left:0;right:0;
+			background :black;
+			padding: 2rem 10%;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			z-index:1000;
+			box-shadow:0 .5rem 1rem rgba(31, 30, 30, 0.1);
+            }
+        .logo{
+			font-size:3rem;
+			color:#fff;
+			font-weight:800;
+			cursor: pointer;
+			transition:0.3s ease;
+		}
+		.logo:hover{
+			transform: scale(1.1);
+			color: aqua;
+		}
+		.logo span{
+			text-shadow: 0 0 25px aqua;
+		}
+
+		.navbar{
+			display:flex;
+		}
+		.navbar a{
+			font-size:1.2rem;
+			padding:0 1.5rem;
+			color:#fff;
+			font-weight: 500;
+			transition: 0.3s ease;
+			border-bottom: 3px solid transparent ;
+		}
+		.navbar a:hover,
+		.navbar a.active{
+			color:aqua;
+			border-bottom: 2px solid aqua;
+
+        }
+        </style>
+<body>
+    <header>
+        <a href="#" class="logo">Web Developer<span></span></a>
+        <nav class="navbar">
+        <a href="C:/Users/SS/Desktop/portfolio/portfolio.html">Home</a>
+        <a href="C:/Users/SS/Desktop/portfolio/education.html">Education</a>
+        <a href="C:/Users/SS/Desktop/portfolio/skills.html">Skills</a>
+        <a href="C:/Users/SS/Desktop/portfolio/exp.html">Exprience</a>
+        <a href="C:/Users/SS/Desktop/portfolio/projects.html">Projects</a>
+    </nav>
+    </header>
+    <h2>Some of My Achivements</h2>
+    <h3>Wrestling</h3>
+    <p>Mass wrestling Gold Medalist in National Level</p>
+    <br><br>
+    <h3>Volunteering</h3>
+    <p>Volunteer in Dr.D.Y.Patil handling registration &
+        managing crowd.</p>
+</body>
+</html>

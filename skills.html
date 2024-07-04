@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+			margin:0; padding:0;
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, Tahoma,sans-serif;
+			outline: none;
+			border: none;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: .2s linear;
+		}
+		html{
+			font-size: 80%;
+			scroll-behavior: smooth;
+			scroll-padding: 6rem;
+			overflow-x: hidden;
+			background-color: rgb(19, 18, 18);
+		}
+        header{
+			position: fixed;
+			top: 0;left:0;right:0;
+			background :black;
+			padding: 2rem 10%;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			z-index:1000;
+			box-shadow:0 .5rem 1rem rgba(31, 30, 30, 0.1);
+            }
+        .logo{
+			font-size:3rem;
+			color:#fff;
+			font-weight:800;
+			cursor: pointer;
+			transition:0.3s ease;
+		}
+		.logo:hover{
+			transform: scale(1.1);
+			color: aqua;
+		}
+		.logo span{
+			text-shadow: 0 0 25px aqua;
+		}
+
+		.navbar{
+			display:flex;
+		}
+		.navbar a{
+			font-size:1.2rem;
+			padding:0 1.5rem;
+			color:#fff;
+			font-weight: 500;
+			transition: 0.3s ease;
+			border-bottom: 3px solid transparent ;
+		}
+		.navbar a:hover,
+		.navbar a.active{
+			color:aqua;
+			border-bottom: 2px solid aqua;
+
+        }
+		/* Global Styles */
+h1, h2, h3 {
+  font-weight: bold;
+  text-align: center;
+  color:aqua;
+}
+
+h1 {
+margin-top: 8rem;
+  font-size: 4rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: aqua;
+}
+
+/* Section Styles */
+
+#skills {
+  padding: 40px;
+  background-color:transparent;
+  box-shadow: 0 0 10px aqua;
+  transition: all 0.3s ease-in-out; /* add transition effect */
+}
+
+.section-p1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out; /* add animation effect */
+}
+
+.sub-title {
+  font-size: 36px;
+  font-weight: bold;
+  color:white;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out; /* add animation effect */
+}
+
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: all 0.3s ease-in-out; /* add transition effect */
+}
+
+.skills-sub-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: aqua;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out; /* add animation effect */
+}
+
+.article-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  transition: all 0.3s ease-in-out; /* add transition effect */
+}
+
+article {
+  width: calc(25% - 20px);
+  margin: 20px;
+  background-color:transparent;
+  padding: 20px;
+  border: 1px solid aqua;
+  border-radius: 10px;
+  box-shadow: 0 0 10px aqua;
+  transition: all 0.3s ease-in-out; /* add transition effect */
+}
+
+article i {
+  font-size: 36px;
+  color: aqua;
+  margin-bottom: 10px;
+  animation: bounceIn 1s ease-in-out; /* add animation effect */
+}
+
+article h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out; /* add animation effect */
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  article {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    width: 100%;
+  }
+}
+
+/* Hover Effects */
+
+article:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px aqua;
+  transition: all 0.3s ease-in-out;
+}
+
+article:hover i {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+article:hover h3 {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+        </style>
+<body>
+    <header>
+        <a href="#" class="logo">Web Developer<span></span></a>
+        <nav class="navbar">
+        <a href="C:/Users/SS/Desktop/portfolio/portfolio.html">Home</a>
+        <a href="C:/Users/SS/Desktop/portfolio/education.html">Education</a>
+        <a href="C:/Users/SS/Desktop/portfolio/projects.html">Projects</a>
+        <a href="C:/Users/SS/Desktop/portfolio/exp.html">Exprience</a>
+    </nav>
+    </header>
+	<section id="skills">
+	<p class="section-p1">Explore My </p>
+    <h1 class="sub-title">Skills</h1>
+	
+			<div class="details-container">
+    <h2 class="skills-sub-title"> Technical Skills</h2>
+	<div class="article-container">
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>HTML5</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>CSS3</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>Javascript</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>React.js</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>Node.js</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>MongoDB</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>Java</h3>
+			</div>
+		</article>
+		</div>
+		<div class="details-container">
+		<h2 class="skills-sub-title"> Communication Skills</h2>
+		<div class="article-container">
+			<article>
+				<i class='fas fa-laptop-code'></i>
+				<div>
+					<h3>Creativity</h3>
+				</div>
+			</article>>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>Communication</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>Teamwork</h3>
+			</div>
+		</article>
+		<article>
+			<i class='fas fa-laptop-code'></i>
+			<div>
+				<h3>Problem solving</h3>
+			</div>
+		</article>
+			<article>
+				<i class='fas fa-laptop-code'></i>
+				<div>
+					<h3>Hardwork</h3>
+				</div>
+			</article>
+			<article>
+				<i class='fas fa-laptop-code'></i>
+				<div>
+					<h3>Multi-tasking</h3>
+				</div>
+			</article>
+		</div>
+		</div>
+		</div>
+	</section>
+</body>
+</html>

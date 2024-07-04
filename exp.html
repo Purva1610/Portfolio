@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+			margin:0; padding:0;
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, Tahoma,sans-serif;
+			outline: none;
+			border: none;
+			text-decoration: none;
+			text-transform: capitalize;
+			transition: .2s linear;
+		}
+		html{
+			font-size: 80%;
+			scroll-behavior: smooth;
+			scroll-padding: 6rem;
+			overflow-x: hidden;
+			background-color: rgb(19, 18, 18);
+		}
+        header{
+			position: fixed;
+			top: 0;left:0;right:0;
+			background :black;
+			padding: 2rem 10%;
+			display:flex;
+			align-items:center;
+			justify-content:space-between;
+			z-index:1000;
+			box-shadow:0 .5rem 1rem rgba(31, 30, 30, 0.1);
+            }
+        .logo{
+			font-size:3rem;
+			color:#fff;
+			font-weight:800;
+			cursor: pointer;
+			transition:0.3s ease;
+		}
+		.logo:hover{
+			transform: scale(1.1);
+			color: aqua;
+		}
+		.logo span{
+			text-shadow: 0 0 25px aqua;
+		}
+
+		.navbar{
+			display:flex;
+		}
+		.navbar a{
+			font-size:1.2rem;
+			padding:0 1.5rem;
+			color:#fff;
+			font-weight: 500;
+			transition: 0.3s ease;
+			border-bottom: 3px solid transparent ;
+		}
+		.navbar a:hover,
+		.navbar a.active{
+			color:aqua;
+			border-bottom: 2px solid aqua;
+		}
+/* Section styling */
+#exprience {
+    padding: 50px 0;
+    background-color:transparent;
+    text-align: center;
+}
+
+.exprience h2 {
+    font-size: 3.5rem;
+    font-family: 'Times New Roman', Times, serif;
+	margin-top: 8rem;
+    margin-bottom: 5rem;
+    color: aqua;
+  
+}
+
+/* Timeline styling */
+.timeline-items {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+}
+
+.timeline-item .timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.timeline-item .timeline-date {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.timeline-item .timeline-content {
+    background-color:black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px aqua;
+    text-align: left;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: aqua;
+}
+
+.timeline-item p {
+    margin: 10px 0 0;
+    color: white;
+}
+
+.timeline-item pre {
+    background-color:black;
+    padding: 10px;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Enables line wrapping */
+    word-wrap: break-word;
+    font-size: 0.9em;
+    color: white;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .timeline-items {
+        padding: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-item .timeline-dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    .timeline-item .timeline-content {
+        padding: 15px;
+    }
+
+    .timeline-item h3 {
+        font-size: 1.2em;
+    }
+
+    .heading {
+        font-size: 2em;
+    }
+}
+
+        </style>
+<body>
+    <header>
+        <a href="#" class="logo">Web Developer<span></span></a>
+        <nav class="navbar">
+        <a href="C:/Users/SS/Desktop/portfolio/portfolio.html">Home</a>
+        <a href="C:/Users/SS/Desktop/portfolio/education.html">Education</a>
+        <a href="C:/Users/SS/Desktop/portfolio/skills.html">Skills</a>
+        <a href="C:/Users/SS/Desktop/portfolio/projects.html">Projects</a>
+    </nav>
+    </header>
+	<section class="exprience" id="exprience">
+    <h2 class="fas fa-briefcase experience-icon">My Exprience</h2>
+	<div class="timeline-items">
+		<div class="timeline-item">
+			<div class="timeline-dot"></div>
+				<div class="timeline-date">Jan 2024 - June 2024</div>
+				<div class="timeline-content">
+    <h3>Internship</h3>
+    <p><big>Project Intern in 480 Pixel Studio</big><pre>         
+    Frontend debeloper with exprience in projects like token appreciation system and UI design for pamplates
+    skilled in HTML, CSS, Javascript, React.js and mordern frameworks, dedicating to creating responsive and 
+    user-friendly web applications</pre></p>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>
